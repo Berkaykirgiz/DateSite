@@ -3,16 +3,26 @@
 
 // Firebase Console'dan aldığın bilgiler bu objenin içine gelecek.
 
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDSvWQnnH1vdBRJTMqsYhmQLK26JfcPwKc",
-  authDomain: "datesite-1e7e4.firebaseapp.com",
-  projectId: "datesite-1e7e4",
-  storageBucket: "datesite-1e7e4.firebasestorage.app",
-  messagingSenderId: "897706378945",
-  appId: "1:897706378945:web:fadebc13059be6c1d6b640"
+    apiKey: "BURAYA_API_KEY",
+    authDomain: "BURAYA_AUTH_DOMAIN",
+    projectId: "BURAYA_PROJECT_ID",
+    storageBucket: "BURAYA_STORAGE_BUCKET",
+    messagingSenderId: "BURAYA_MESSAGING_SENDER_ID",
+    appId: "BURAYA_APP_ID"
 };
 
-export { firebaseConfig };
+// const firebaseConfig = {
+//   apiKey: "AIzaSyDSvWQnnH1vdBRJTMqsYhmQLK26JfcPwKc",
+//   authDomain: "datesite-1e7e4.firebaseapp.com",
+//   projectId: "datesite-1e7e4",
+//   storageBucket: "datesite-1e7e4.firebasestorage.app",
+//   messagingSenderId: "897706378945",
+//   appId: "1:897706378945:web:fadebc13059be6c1d6b640"
+// };
+
+// export { firebaseConfig };
 
 /* 
 // Import the functions you need from the SDKs you need
