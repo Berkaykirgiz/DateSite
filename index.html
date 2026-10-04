@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bir Date? 💕</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <!-- ANA SORU -->
+        <section class="card question-card" id="questionScreen">
+
+            <div class="flower flower-1">🌷</div>
+            <div class="flower flower-2">🌸</div>
+
+            <div class="small-text">Sana bir sorum var...</div>
+
+            <h1>
+                Benimle<br>
+                dışarı çıkar mısın?
+            </h1>
+
+            <p class="subtitle">
+                Güzel bir gün geçirelim mi? 🤍
+            </p>
+
+            <div class="buttons">
+                <button class="yes-btn" id="yesButton">
+                    Evet 💗
+                </button>
+
+                <button class="no-btn" id="noButton">
+                    Hayır
+                </button>
+            </div>
+
+            <div class="hint" id="noHint"></div>
+
+        </section>
+
+
+        <!-- DATE EKRANI -->
+        <section class="card date-card hidden" id="dateScreen">
+
+            <div class="date-decoration">♡</div>
+
+            <div class="small-text">Cevabın beni çok mutlu etti...</div>
+
+            <h1>
+                Bu bir<br>
+                <span>Date! 💕</span>
+            </h1>
+
+            <p class="date-message">
+                O zaman bunu biraz daha<br>
+                güzelleştirelim.
+            </p>
+
+            <button class="plan-btn" id="planButton">
+                Hadi planlayalım 💌
+            </button>
+
+        </section>
+
+
+        <!-- PLANLAMA EKRANI -->
+        <section class="card plan-card hidden" id="planScreen">
+
+            <div class="small-text">Sadece ikimiz için...</div>
+
+            <h2>Date'imizi planlayalım 💕</h2>
+
+            <!-- TARİH -->
+            <div class="form-group">
+                <label for="dateInput">📅 Ne zaman?</label>
+                <input type="date" id="dateInput">
+            </div>
+
+            <!-- SAAT -->
+            <div class="form-group">
+                <label for="timeInput">🕐 Saat kaçta?</label>
+                <input type="time" id="timeInput">
+            </div>
+
+            <!-- ETKİNLİK -->
+            <div class="form-group">
+                <label>✨ Ne yapalım?</label>
+
+                <div class="activities">
+
+                    <button class="activity" data-activity="Kahve">
+                        <span class="activity-icon">☕</span>
+                        <span>Kahve</span>
+                    </button>
+
+                    <button class="activity" data-activity="Film">
+                        <span class="activity-icon">🎬</span>
+                        <span>Film</span>
+                    </button>
+
+                    <button class="activity" data-activity="Akşam Yemeği">
+                        <span class="activity-icon">🍝</span>
+                        <span>Akşam Yemeği</span>
+                    </button>
+
+                    <button class="activity" data-activity="Parkta Yürümek">
+                        <span class="activity-icon">🌳</span>
+                        <span>Parkta Yürümek</span>
+                    </button>
+
+                    <button class="activity" data-activity="Bir Şeyler İçmek">
+                        <span class="activity-icon">🍷</span>
+                        <span>Bir Şeyler İçmek</span>
+                    </button>
+
+                    <button class="activity surprise" data-activity="Beni Şaşırt">
+                        <span class="activity-icon">🎁</span>
+                        <span>Beni Şaşırt</span>
+                    </button>
+
+                </div>
+            </div>
+
+            <p class="error-message" id="errorMessage"></p>
+
+            <button class="plan-btn" id="savePlanButton">
+                Planla 💗
+            </button>
+
+        </section>
+
+
+        <!-- SONUÇ EKRANI -->
+        <section class="card summary-card hidden" id="summaryScreen">
+
+            <div class="success-heart">💗</div>
+
+            <div class="small-text">
+                Tamamdır, karar verildi!
+            </div>
+
+            <h1>
+                Date planımız<br>
+                hazır. 🌷
+            </h1>
+
+            <div class="summary-box">
+
+                <div class="summary-row">
+                    <span>📅</span>
+                    <div>
+                        <small>Tarih</small>
+                        <strong id="summaryDate"></strong>
+                    </div>
+                </div>
+
+                <div class="summary-row">
+                    <span>🕐</span>
+                    <div>
+                        <small>Saat</small>
+                        <strong id="summaryTime"></strong>
+                    </div>
+                </div>
+
+                <div class="summary-row">
+                    <span id="summaryActivityIcon">💕</span>
+                    <div>
+                        <small>Planımız</small>
+                        <strong id="summaryActivity"></strong>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="final-message">
+                Gerçekten buluşacağız. 🥹💕<br><br>
+
+                Çok güzel olacak, şimdiden çok heyecanlıyım.
+                Daha şimdiden düşünmeden duramıyorum,
+                durduk yere gülüyorum. 🤍<br><br>
+
+                Söz veriyorum, çok güzel geçecek.
+                Seni görmek için sabırsızlanıyorum. 🌷
+            </p>
+
+            <div class="final-hearts">
+                ❤️ 🩷 💕 💗 💖
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Kalpler burada oluşturulacak -->
+    <div id="heartsContainer"></div>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
