@@ -22,7 +22,7 @@ const firebaseConfig = {
 //   appId: "1:897706378945:web:fadebc13059be6c1d6b640"
 // };
 
-// export { firebaseConfig };
+export { firebaseConfig };
 
 /* 
 // Import the functions you need from the SDKs you need
